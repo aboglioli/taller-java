@@ -1,10 +1,9 @@
+package estructuras.logicas;
+
 import java.util.Scanner;
 
-public class EstructurasLogicas {
+public class IfElse {
 	public static void main(String[] args) {
-		// IF
-		System.out.println("IF");
-		
 		int a, b;
 
 		Scanner sc = new Scanner(System.in);
@@ -19,20 +18,6 @@ public class EstructurasLogicas {
 			System.out.println(a + " es menor que " + b);
 		} else {
 			System.out.println(a + " es igual a " + b);
-		}
-
-		// WHILE
-		System.out.println("WHILE");
-		int x = 0;
-		while (x <= 15) {
-			System.out.println(x);
-			x = x + 1; // x++;
-		}
-
-		// FOR
-		System.out.println("FOR");
-		for (int i=0; i<=15; i++) {
-			System.out.println();
 		}
 	}
 }
