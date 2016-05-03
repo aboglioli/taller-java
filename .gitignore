@@ -1,2 +1,4 @@
 bin
 img
+build
+/ejemplos/**/nbproject/private/
