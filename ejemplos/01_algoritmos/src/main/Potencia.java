@@ -4,28 +4,32 @@ import java.util.Scanner;
 
 public class Potencia {
 
-    public static int potenciaConWhile(int num, int pot) {
-        int resultado = 1;
-        int contador = 0;
-        while (contador < pot) {
-            resultado = resultado * num;
-            contador = contador + 1; // contador++;
-        }
-        return resultado;
-    }
-
-    public static int potenciaConFor(int num, int pot) {
-        int resultado = 1;
-        for (int i = 0; i < pot; i++) {
-            resultado = resultado * num;
-        }
-
+    public static float potencia(int num, int pot) {
         /*
-		 * Si 5^3
-		 * (0) resultado = 1 * 5
-		 * (1) resultado = 5 * 5
-		 * (2) resultado = 5 * 5
-         */
+        * Si 5^3
+        * (0) resultado = 1 * 5
+        * (1) resultado = 5 * 5
+        * (2) resultado = 5 * 5
+        */
+        
+        float resultado = 1;
+        int hasta = 0;
+        // Potencia negativa
+        if(pot < 0) {
+            hasta = -pot;
+        }
+        else { // Potencia positiva
+            hasta = pot;
+        }
+        
+        for (int i = 0; i < hasta; i++) {
+            resultado = resultado * num;
+        }
+        
+        if(pot < 0) {
+            resultado = 1 / resultado;
+        }
+
         return resultado;
     }
 
@@ -42,7 +46,7 @@ public class Potencia {
         System.out.print("Potencia: ");
         num2 = sc.nextInt();
 
-        int resultado = potenciaConWhile(num1, num2);
+        float resultado = potencia(num1, num2);
         System.out.println("Resultado: " + resultado);
     }
 }
