@@ -1,19 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package main;
 
 import java.util.ArrayList;
 
+/**
+ *
+ * @author kiriost
+ */
 public class Familia {
-	private ArrayList<Persona> familia = new ArrayList();
+    private ArrayList<Persona> personas;
 
-	public Familia() {
+    public Familia() {
+        personas = new ArrayList();
+        personas.add( new Persona("Solterón") );
+    }
+    
+    public Familia(Persona p) {
+        personas = new ArrayList();
+        personas.add(p);
+    }   
 
-	}
+    public void agregarMiembro(Persona p) {
+        personas.add(p);
+    }
 
-	public void agregarMiembro(Persona n) {
-		familia.add(n);
-	}
-
-	public ArrayList<Persona> verMiembros() {
-		return familia;
-	}
-}
+    public ArrayList<Persona> getPersonas() {
+        return personas;
+    }
+}    

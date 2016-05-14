@@ -1,37 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package main;
 
+/**
+ *
+ * @author kiriost
+ */
 public class Casa {
-	private String domicilio;
-	private Familia familia;
-	private int num;
+    private Familia familia;
 
-	public Casa(String dom, Familia family, int tel) {
-		domicilio = dom;
-		familia = family;
-		num = tel;
-	}
+    public Casa() {
+        this.familia = new Familia();
+    }
+    
+    public Casa(Familia familia) {
+        this.familia = familia;
+    }
 
-	public String getDomicilio() {
-		return domicilio;
-	}
+    public Familia getFamilia() {
+        return familia;
+    }
 
-	public Familia getFamilia() {
-		return familia;
-	}
-
-	public int getTel() {
-		return num;
-	}
-
-	public void setDomicilio(String dom) {
-		domicilio = dom;
-	}
-
-	public void setFamilia(Familia fami) {
-		familia = fami;
-	}
-
-	public void setTel(int num) {
-		this.num = num;
-	}
+    public void setFamilia(Familia familia) {
+        this.familia = familia;
+    }
+    
+    
 }
