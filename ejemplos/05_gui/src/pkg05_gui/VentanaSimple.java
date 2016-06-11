@@ -4,8 +4,7 @@
  */
 package pkg05_gui;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.*;
 
 /**
  *
@@ -15,9 +14,10 @@ public class VentanaSimple extends JFrame {
 
     public VentanaSimple() {
         JLabel hola = new JLabel("Hola mundo!");
-        add(hola);
+        this.add(hola);
         
         this.setSize(100, 100);
+        this.setTitle("asd");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
