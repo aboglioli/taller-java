@@ -19,8 +19,8 @@ public class Hola {
 ## Material
 * Introducción completa al lenguaje Java (por __Fede Brest__): [Introducción a Java](https://github.com/aboglioli/taller-java/raw/master/material_complementario/introduccion_a_java.pdf).
 * Libro recomendado: pueden encontrarlo en CCA (fotocopiadora) con el código __7735__.
-* Introducción a la Programación Orientada a Objetos (por [Luis R.
-  Izquierdo](http://luis.izqui.org/)): [ProgOrientadaObjetos.pdf](http://luis.izqui.org/resources/ProgOrientadaObjetos.pdf). También se encuentra en este repositorio, dentro de _material complementario_.
+* Introducción a la Programación Orientada a Objetos (por [Luis R. Izquierdo](http://luis.izqui.org/)): [ProgOrientadaObjetos.pdf](http://luis.izqui.org/resources/ProgOrientadaObjetos.pdf). También se encuentra en este repositorio, dentro de _material complementario_.
+* SWING Tutorial en inglés: [http://www.tutorialspoint.com/swing/](http://www.tutorialspoint.com/swing/)
 
 ## Referencias
 * Grupo de Facebook: [facebook.com/groups/tallerprogramacionenjava](https://www.facebook.com/groups/tallerprogramacionenjava/).
